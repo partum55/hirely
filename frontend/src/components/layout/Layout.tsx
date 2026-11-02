@@ -29,6 +29,11 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+      {import.meta.env.VITE_DEMO && (
+        <div className="bg-[#226A74] text-white text-center text-sm py-2 px-4">
+          Demo version — data is fake, AI responses are canned, and everything resets on reload.
+        </div>
+      )}
       <nav className="glass-effect sticky top-0 z-50 border-b border-white/30">
         <div className="mx-auto max-w-7xl px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-8">
